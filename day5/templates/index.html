@@ -1,0 +1,21 @@
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <h1>Welcome to the Index Page</h1>
+
+        <form method="POST" action="/postData">
+            <label>enter your name:</label>
+            <input type="text" name="name" required/><br/>
+            <label>enter your email:</label>
+            <input type="email" name="email" required/><br/>
+            <label>enter your password:</label>
+            <input type="password" name="password" required/><br/>
+            <input type="submit" value="Submit"/>
+            <span style="color: red;">{{ error }}</span>
+            <span style="color: green;">{{ success }}</span>
+
+        </form>
+    </body>
+</html>
